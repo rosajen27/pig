@@ -49,9 +49,29 @@ btnRoll.addEventListener("click", function () {
 
         // change background to active player
         // toggle - add css class if it is not there, removes class if it is
-        player0El.classList.toggle("player---active");
-        player1El.classList.toggle("player---active");
+        player0El.classList.toggle("player--active");
+        player1El.classList.toggle("player--active");
 
 
     }
-})
+});
+
+// hold/save score
+btnHold.addEventListener("click", function () {
+    // add current score to active player's score
+    scores[activePlayer] += currentScore;
+    // scores[1] = scores[1] + currentScore
+
+    document.getElementById(`score--${activePlayer}`).textContent = scores[activePlayer];
+
+    // switch player (refer to code above)
+    document.getElementById(`current--${activePlayer}`).textContent = 0;
+    currentScore = 0;
+    activePlayer = activePlayer === 0 ? 1 : 0;
+    player0El.classList.toggle("player--active");
+    player1El.classList.toggle("player--active");
+
+    // check if player's score is >= 100
+    // if so, finish the game
+    // if not, switch to the next player
+});
