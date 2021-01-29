@@ -1,6 +1,15 @@
 # 🐷 Pig Game
 
-Coming Soon
+Pig is a simple dice game. Players take turns to roll a single die as many times as they wish, adding all roll results to a running total, but losing their gained score for the turn if they roll a 1.
+
+Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":
+
+* If the player rolls a 1, they score nothing and it becomes the next player's turn.
+* If the player rolls any other number, it is added to their turn total and the player's turn continues.
+* If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.
+* The first player to score 100 or more points wins.
+
+For example, the first player, Jennifer, begins a turn with a roll of 5. Jennifer could hold and score 5 points, but chooses to roll again. Jennifer rolls a 2, and could hold with a turn total of 7 points, but chooses to roll again. Jennifer rolls a 1, and must end her turn without scoring. The next player, Luis, rolls the sequence 4-5-3-5-5, after which he chooses to hold, and adds his turn total of 22 points to his score.
 
 ## Table of Contents
 * [Deployment](#deployment)
@@ -12,7 +21,7 @@ Coming Soon
  
 ## Deployment
 
-Deployed Website: Coming Soon
+Deployed Website: https://rosajen27.github.io/pig/
 
 ![demo.png](./images/demo.png)
 

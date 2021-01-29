@@ -67,7 +67,7 @@ btnHold.addEventListener("click", function () {
 
         // check if player's score is >= 100
         // if so, finish the game. if not, switch to the next player
-        if (scores[activePlayer] >= 10) {
+        if (scores[activePlayer] >= 100) {
             playing = false;
             diceEl.classList.add("hidden");
             btnHold.classList.add("hidden");
