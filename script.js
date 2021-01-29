@@ -18,8 +18,7 @@ score0El.textContent = 0;
 score1El.textContent = 0;
 diceEl.classList.add("hidden");
 let playing = true;
-
-const scores = [0, 0];
+let scores = [0, 0];
 let currentScore = 0;
 let activePlayer = 0;
 
@@ -84,4 +83,27 @@ btnHold.addEventListener("click", function () {
             player1El.classList.toggle("player--active");
         }
     }
+});
+
+// resetting the game
+btnNew.addEventListener("click", function () {
+    // reset UI
+    score0El.textContent = 0;
+    score1El.textContent = 0;
+    current0El.textContent = 0;
+    current1El.textContent = 0;
+
+    player0El.classList.remove("player--winner");
+    player1El.classList.remove("player--winner");
+    player0El.classList.add("player--active");
+    player1El.classList.remove("player--active");
+    diceEl.classList.remove("hidden");
+    btnHold.classList.remove("hidden");
+    btnRoll.classList.remove("hidden");
+
+    // reset starting conditions
+    scores = [0, 0];
+    currentScore = 0;
+    activePlayer = 0;
+    playing = true;
 });
