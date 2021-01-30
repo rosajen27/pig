@@ -24,6 +24,7 @@ For example, the first player, Jennifer, begins a turn with a roll of 5. Jennife
 Deployed Website: https://rosajen27.github.io/pig/
 
 ![demo.png](./images/demo.png)
+![demo2.png](./images/demo2.png)
 
 
 ## Built With
